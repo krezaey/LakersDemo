@@ -5,9 +5,52 @@
  Date       :  2018-08-02
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 
+ body {
+     background-image: url("../media/repeating-background-image.jpg");
+ }
+
+ #logo {
+     grid-column: 1 / span 1;
+     grid-row: 1 / span 1;
+     float: left;
+     background-image: url("../media/repeating-background-image.jpg");
+     height: auto;
+     width: 10%;
+ }
+
+ #nav {
+     grid-column: 2 / span 2;
+     grid-row: 1 / span 1;
+     background-color: white;
+ }
+
+ #nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+ }
+
+ #nav li {
+    display: inline block;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    background-image: none;
+ }
+
+ #nav li:hover {
+     background-image: url("../media/repeating-background-image.jpg");
+     color: white;
+ }
+ #nav img {
+     display: inline;
+     float: left;
+ }
+
  #content {
     display: grid;
-    grid-template-rows: 1fr 2fr 3fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr 3fr 2fr 2fr;
     grid-template-columns: 2fr 6fr 2fr;
  }
 
@@ -16,27 +59,34 @@
  }
 
  #horizontal {
-    grid-row: 1 / span 1;
+    grid-row: 2 / span 1;
  }
 
  #score {
-    grid-row: 2 / span 1;
+    grid-row: 3 / span 1;
  }
 
  #maincontent {
     grid-column: 2 / span 1;
  }
 
- #video {
-    grid-row: 3 / span 1;
+ #header, #maincontent {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
  }
 
- #recap {
+ #video {
     grid-row: 4 / span 1;
  }
 
- #gallery {
+ #recap {
     grid-row: 5 / span 1;
+ }
+
+ #gallery {
+    grid-row: 6 / span 1;
  }
 
  #left {
@@ -44,7 +94,7 @@
  }
 
  #postgame {
-    grid-row: 3 / span 2;
+    grid-row: 4 / span 2;
  }
 
  #right {
@@ -52,7 +102,7 @@
  }
 
  #square {
-    grid-row: 3 / span 1;
+    grid-row: 4 / span 1;
  }
 
  .ad {
