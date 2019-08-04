@@ -1,5 +1,5 @@
 /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  * File name  :  scripts.js
+  *  File name  :  scripts.js
   *  Purpose    :  structure for game recap page
   *  Author     :  Keziah Rezaey
   *  Date       :  2018-08-02
