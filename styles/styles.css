@@ -6,19 +6,16 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 
  #content {
-    color: red;
     display: grid;
     grid-template-rows: 1fr 2fr 3fr 2fr 2fr;
     grid-template-columns: 2fr 6fr 2fr;
-    border-color: black; 
-    border-style: solid; 
  }
 
  #header {
     grid-column: 1 / span 3;
  }
 
- #horizontal_ad {
+ #horizontal {
     grid-row: 1 / span 1;
  }
 
@@ -54,7 +51,10 @@
     grid-column: 3 / span 1;
  }
 
- #square_ad {
+ #square {
     grid-row: 3 / span 1;
  }
 
+ .ad {
+     border: 1px solid black;
+ }
