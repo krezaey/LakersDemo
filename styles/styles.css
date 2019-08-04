@@ -6,25 +6,20 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 
 body {
-   /* height: 100vh;
-   width: auto; */
-   /* display: grid; */
-   margin: 10px;
-   grid-template-rows: 2fr 5fr 1fr;
-   grid-template-columns: 4fr 10fr 2fr;
+   height: 100vh;
    background-image: url("../media/repeating-background-image.jpg");
+   font-family: avenir;
+   /* max-height: 100%; */
 }
 
 #content {
    display: grid;
-   height: 100vh;
-   width: 100vw;
+   grid-template-rows: 1fr 5fr 1fr;
+   grid-template-columns: 4fr 10fr 2fr;
+   grid-gap: 5px;
 }
 
 #logo {
-   /* background-image: url("../media/repeating-background-image.jpg"); */
-   height: auto;
-   width: 10%;
    grid-row: 1 / span 1;
    grid-column: 1 / span 1;
    background-color: blue;
@@ -33,7 +28,7 @@ body {
 #header {
    grid-row: 1 / span 1;
    grid-column: 2 / span 1;
-   background-color: brown;
+   background-color: black;
 }
 
 #nav {
@@ -48,7 +43,7 @@ body {
 }
 
 #nav li {
-  display: inline block;
+  /* display: inline block; */
   text-align: center;
   background-image: none;
   float: left;
@@ -60,7 +55,7 @@ body {
    color: white;
 }
 
-#maincontent {
+#main {
    grid-row: 2 / span 1;
    grid-column: 2 / span 1;
    background-color: red;
@@ -82,4 +77,11 @@ body {
    grid-row: 3 / span 1;
    grid-column: 1 / span 3;
    background-color: pink;
+}
+
+/* change later */
+
+img {
+   width: 5%;
+   height: auto;
 }
