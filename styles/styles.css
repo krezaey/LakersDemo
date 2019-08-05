@@ -80,19 +80,21 @@ body {
    grid-row: 3 / span 1;
    grid-column: 2 / span 1;
    background-color: red;
+}
+
+#score {
    display: grid;
    grid-template-columns: 1fr 1fr;
    padding: 10px;
+   text-align: center;
 }
 
 #lal_score {
    grid-column: 1;
-   float: left;
 }
 
 #chi_score {
    grid-column: 2;
-   float: right;
 }
 
 #video, #recap, #gallery {
