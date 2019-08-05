@@ -9,24 +9,31 @@ body {
    height: 100vh;
    background-image: url("../media/repeating-background-image.jpg");
    font-family: avenir;
-   /* max-height: 100%; */
 }
 
 #content {
    display: grid;
-   grid-template-rows: 1fr 5fr 1fr;
+   grid-template-rows: 30px 1fr 5fr 1fr;
    grid-template-columns: 4fr 10fr 2fr;
    grid-gap: 5px;
 }
 
-#logo {
+#nba_header {
    grid-row: 1 / span 1;
+   grid-column: 1 / span 3;
+   margin-top: 0px;
+   padding-bottom: 10px;
+   overflow-y: none;
+}
+
+#logo {
+   grid-row: 2 / span 1;
    grid-column: 1 / span 1;
    background-color: blue;
 }
 
 #header {
-   grid-row: 1 / span 1;
+   grid-row: 2 / span 1;
    grid-column: 2 / span 1;
    background-color: black;
 }
@@ -43,7 +50,6 @@ body {
 }
 
 #nav li {
-  /* display: inline block; */
   text-align: center;
   background-image: none;
   float: left;
@@ -56,63 +62,49 @@ body {
 }
 
 #main {
-   grid-row: 2 / span 1;
+   grid-row: 3 / span 1;
    grid-column: 2 / span 1;
    background-color: red;
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-#score {
-   grid-row: 1;
+   padding: 10px;
 }
 
 #lal_score {
    grid-column: 1;
+   float: left;
 }
 
 #chi_score {
    grid-column: 2;
+   float: right;
 }
 
 #video, #recap, #gallery {
    grid-column: 1 / span 2;
 }
 
-#video {
-   grid-row: 2;
-}
-
-#recap {
-   grid-row: 3;
-}
-
-#gallery {
-   grid-row: 4;
-}
-
 #left {
-   grid-row: 2 / span 1; 
+   grid-row: 3 / span 1; 
    grid-column: 1 / span 1;
    background-color: green;
 }
 
 #right {
-   grid-row: 1 / span 2;
+   grid-row: 2 / span 2;
    grid-column: 3 / span 1;
    background-color: yellow;
 }
 
 #footer {
-   grid-row: 3 / span 1;
+   grid-row: 4 / span 1;
    grid-column: 1 / span 3;
    background-color: pink;
 }
 
 /* change later */
 
-img {
-   width: 5%;
+#score img {
+   width: 10%;
    height: auto;
 }
