@@ -5,10 +5,16 @@
  Date       :  2018-08-02
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 
+ /* TO DO 
+ - add post game content 
+ - add square ad 
+ - ad game recap
+ - fix box score  */
+
 body {
    height: 100vh;
-   background-image: url("../media/repeating-background-image.jpg");
    font-family: avenir;
+   background-image: url("../media/repeating-background-image.jpg");
 }
 
 #content {
@@ -29,17 +35,20 @@ body {
    grid-row: 2 / span 1;
    grid-column: 1 / span 1;
    text-align: center;
-   background-image: url("../media/repeating-background-image.jpg");
+   padding-top: 15%;
 }
 
 #header {
    grid-row: 2 / span 1;
    grid-column: 2 / span 1;
+}
+
+#logo, #header {
    background-image: url("../media/repeating-background-image.jpg");
 }
 
 #nav {
-   background-color: white;
+   background-color:black;
 }
 
 #nav ul {
@@ -54,6 +63,7 @@ body {
   background-image: none;
   float: left;
   padding: 10px;
+  color: white;
 }
 
 #nav li:hover {
@@ -62,7 +72,7 @@ body {
 }
 
 #horizontal  {
-   padding: 5px;
+   padding-top: 5%;
    text-align: center;
 }
 
@@ -89,11 +99,19 @@ body {
    grid-column: 1 / span 2;
 }
 
+#video {
+   text-align: center;
+}
+
 #left {
    grid-row: 3 / span 1; 
    grid-column: 1 / span 1;
    background-color: green;
 }
+
+/* .twitter-tweet {
+   text-align: center;
+} */
 
 #right {
    grid-row: 2 / span 2;
