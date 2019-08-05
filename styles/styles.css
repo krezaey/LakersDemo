@@ -74,6 +74,7 @@ body {
 #horizontal  {
    padding-top: 5%;
    text-align: center;
+   margin-bottom: -200px;
 }
 
 #main {
@@ -116,8 +117,21 @@ body {
    grid-column: 1 / span 2;
 }
 
-#video {
+#video, #recap h1 {
    text-align: center;
+}
+
+.center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 75%;
+   height: auto;
+   border: 1px solid black;
+}
+
+#recap {
+   padding: 10px;
 }
 
 #left {
@@ -125,10 +139,6 @@ body {
    grid-column: 1 / span 1;
    background-color: green;
 }
-
-/* .twitter-tweet {
-   text-align: center;
-} */
 
 #right {
    grid-row: 2 / span 2;
