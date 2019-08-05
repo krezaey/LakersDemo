@@ -79,7 +79,7 @@ body {
 #main {
    grid-row: 3 / span 1;
    grid-column: 2 / span 1;
-   background-color: red;
+   background-color: white;
 }
 
 #score {
@@ -87,6 +87,21 @@ body {
    grid-template-columns: 1fr 1fr;
    padding: 10px;
    text-align: center;
+   background-image: url("../media/gallery1_edited.png");
+   background-size: auto;
+   color: white;
+}
+
+#score img {
+   width: 50%;
+   height: auto;
+   margin-top: -20px;
+   margin-bottom: -120px;
+}
+
+#score p {
+   font-size: 100px;
+   margin-bottom: -25px;
 }
 
 #lal_score {
@@ -125,11 +140,4 @@ body {
    grid-row: 4 / span 1;
    grid-column: 1 / span 3;
    background-color: pink;
-}
-
-/* change later */
-
-#score img {
-   width: 10%;
-   height: auto;
 }
