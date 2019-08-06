@@ -25,7 +25,7 @@
 	grid-row: 2 / span 1;
 	grid-column: 1 / span 1;
 	text-align: center;
-	padding-top: 15%;
+	padding-top: 10%;
 }
 #header {
 	grid-row: 2 / span 1;
@@ -55,14 +55,15 @@
 	color: white;
 }
 #horizontal {
-	padding-top: 5%;
-	text-align: center;
-	margin-bottom: -200px;
+   text-align: center;
+   width: 10fr;
+   height: auto;
 }
 #main {
 	grid-row: 3 / span 1;
 	grid-column: 2 / span 1;
-	background-color: white;
+   background-color: white;
+   margin-top: -86%;
 }
 #score {
 	display: grid;
@@ -109,8 +110,6 @@
 .article {
    padding: 10px;
    margin: 5px;
-   border: 2px solid black;
-   box-shadow: 0px 3px 10px;
 }
 .article h3:hover {
    color: purple;
@@ -118,7 +117,8 @@
 #left {
 	grid-row: 3 / span 1;
    grid-column: 1 / span 1;
-	background-image: url("../media/repeating-background-image.jpg");
+   background-image: url("../media/repeating-background-image.jpg");
+   margin-top: -87%;
 }
 .twitter-tweet {
 	width: 50%;
