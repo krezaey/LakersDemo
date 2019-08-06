@@ -7,20 +7,18 @@
 
  /* TO DO 
  - add post game content 
- - add square ad 
- - ad game recap
- - fix box score  */
+ - add square ad  */
 
 body {
-   height: 100vh;
+   /* height: 100vh; */
    font-family: avenir;
    background-image: url("../media/repeating-background-image.jpg");
 }
 
 #content {
    display: grid;
-   grid-template-rows: 30px 1fr 5fr 1fr;
-   grid-template-columns: 4fr 10fr 2fr;
+   grid-template-rows: 30px 1fr 5fr;
+   grid-template-columns: 2fr 10fr;
    grid-gap: 5px;
 }
 
@@ -137,7 +135,11 @@ body {
 #left {
    grid-row: 3 / span 1; 
    grid-column: 1 / span 1;
-   background-color: green;
+   background-image: url("../media/repeating-background-image.jpg");
+}
+
+.twitter-tweet {
+   width: 50%;
 }
 
 #right {
