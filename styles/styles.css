@@ -6,11 +6,9 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 
  /* TO DO 
- - add post game content 
- - add square ad  */
+ - add post game content */
 
 body {
-   /* height: 100vh; */
    font-family: avenir;
    background-image: url("../media/repeating-background-image.jpg");
 }
@@ -18,7 +16,7 @@ body {
 #content {
    display: grid;
    grid-template-rows: 30px 1fr 5fr;
-   grid-template-columns: 2fr 10fr;
+   grid-template-columns: auto 10fr;
    grid-gap: 5px;
 }
 
@@ -115,7 +113,7 @@ body {
    grid-column: 1 / span 2;
 }
 
-#video, #recap h1 {
+.video, #recap h1 {
    text-align: center;
 }
 
